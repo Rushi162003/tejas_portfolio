@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas Jagdale — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in React, Next.js & Node.js. Building fast, clean, and intuitive web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">TJ<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tejas_jagdale_resume_Frontend.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-sm">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="tejas_jagdale_resume_Frontend.pdf" target="_blank" rel="noopener" class="mobile-link">Resume</a></li>
+      <li><a href="#contact" class="btn btn-full mobile-link">Hire Me</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        Tejas<br /><span class="gradient-text">Jagdale</span>
+      </h1>
+      <div class="hero-title">
+        <span class="title-prefix">I build</span>
+        <span class="typed-wrapper">
+          <span class="typed" id="typed"></span>
+          <span class="cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-desc">
+        Full Stack Developer crafting fast, clean, and intuitive web experiences
+        with <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>.
+        Passionate about turning ideas into production-ready products.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <a href="tejas_jagdale_resume_Frontend.pdf" download class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Tech Stacks</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-title">tejas.ts</span>
+        </div>
+        <pre class="code-content"><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Tejas Jagdale"</span>,
+  <span class="key">role</span>: <span class="str">"Full Stack Developer"</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"React"</span>, <span class="str">"Next.js"</span>,
+    <span class="str">"Node.js"</span>, <span class="str">"TypeScript"</span>
+  ],
+  <span class="key">passion</span>: <span class="str">"Building great UX"</span>,
+  <span class="key">status</span>: <span class="str">"Open to work 🚀"</span>,
+  <span class="key">hire</span>: () =&gt; <span class="str">"Let's connect!"</span>
+};</pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">TJ</div>
+            <div class="avatar-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full Stack Dev
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">
+            Hey! I'm Tejas — a <strong>Full Stack Developer</strong> from India with a knack for
+            building end-to-end web applications. I specialize in the modern JavaScript ecosystem:
+            crafting pixel-perfect frontends with <strong>React & Next.js</strong> and building
+            robust APIs with <strong>Node.js & Express</strong>.
+          </p>
+          <p class="about-text">
+            I love working at the intersection of design and engineering — where clean code
+            meets great user experiences. Currently, I'm building real-time communication tools
+            and AI-powered applications, always looking for my next big challenge.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div>
+                <div class="highlight-title">Fast Learner</div>
+                <div class="highlight-sub">Adapt to new technologies quickly</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <div class="highlight-title">Detail-Oriented</div>
+                <div class="highlight-sub">Clean code & pixel-perfect UI</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <div class="highlight-title">Shipping Mindset</div>
+                <div class="highlight-sub">From idea to production</div>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🤝</div>
+              <div>
+                <div class="highlight-title">Team Player</div>
+                <div class="highlight-sub">Open source contributor</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="https://github.com/Rushi162003" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/tejas-full-stack-developer/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="tejas_jagdale_resume_Frontend.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">What I Work With</div>
+      <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🎨</div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">React.js</span>
+            <span class="skill-tag featured">Next.js</span>
+            <span class="skill-tag featured">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3 / SCSS</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">shadcn/ui</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">⚙️</div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">Node.js</span>
+            <span class="skill-tag featured">Express.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Tools & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">Git / GitHub</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">pnpm</span>
+            <span class="skill-tag">ESLint</span>
+            <span class="skill-tag">Prettier</span>
+            <span class="skill-tag">Vite</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag featured">TypeScript</span>
+            <span class="skill-tag featured">JavaScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Chat App -->
+        <div class="project-card featured-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="--icon-color: #7c3aed;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="project-links">
+              <span class="project-featured-label">⭐ Featured</span>
+              <a href="https://chat-application-fe-hbd8.vercel.app/" target="_blank" rel="noopener" class="icon-link" title="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://github.com/Rushi162003/chat-application-fe" target="_blank" rel="noopener" class="icon-link" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Live Chat Platform</h3>
+          <p class="project-desc">
+            A full-featured real-time chat application with user authentication,
+            live messaging, and a clean, responsive UI. Built end-to-end with
+            a Next.js frontend and a dedicated Node.js backend.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">SCSS</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <a href="https://chat-application-fe-hbd8.vercel.app/" target="_blank" rel="noopener" class="project-cta">
+            View Live Demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 2: AI Resume Parser -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="--icon-color: #059669;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rushi162003/ai-resume-parser-forntend" target="_blank" rel="noopener" class="icon-link" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Resume Parser</h3>
+          <p class="project-desc">
+            An AI-powered web application that intelligently parses and analyzes
+            resume documents, extracting structured information with high accuracy.
+            Built with a modern TypeScript stack.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">AI/ML</span>
+          </div>
+        </div>
+
+        <!-- Project 3: API Insight -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="--icon-color: #d97706;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rushi162003/api-insight-react-buddy" target="_blank" rel="noopener" class="icon-link" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">API Insight React Buddy</h3>
+          <p class="project-desc">
+            A developer tool for exploring and testing APIs with an intuitive
+            React-based interface. Built with a modern component library for
+            a polished, professional experience.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">shadcn/ui</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Vite</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Todo Mobile -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon-wrap" style="--icon-color: #db2777;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Rushi162003/todo-moblie" target="_blank" rel="noopener" class="icon-link" title="Source Code">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Todo Mobile App</h3>
+          <p class="project-desc">
+            A mobile-first productivity application for managing daily tasks with
+            a clean, intuitive interface. Demonstrates cross-platform thinking
+            and mobile UX design principles.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Mobile-first</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-footer">
+        <a href="https://github.com/Rushi162003" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          See All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-glow"></div>
+        <div class="section-label" style="text-align:center;">Let's Work Together</div>
+        <h2 class="section-title" style="text-align:center;">
+          Ready to <span class="gradient-text">Connect?</span>
+        </h2>
+        <p class="contact-desc">
+          I'm actively looking for full-time opportunities as a Full Stack Developer.
+          Whether you have a role in mind, a project to discuss, or just want to say hi —
+          my inbox is always open.
+        </p>
+        <div class="contact-grid">
+        <div class="contact-options">
+          <a href="mailto:rushijagdale1605@gmail.com" class="contact-option">
+            <div class="contact-option-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-option-info">
+              <div class="contact-option-label">Email Me</div>
+              <div class="contact-option-value">rushijagdale1605@gmail.com</div>
+            </div>
+            <svg class="contact-option-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tejas-full-stack-developer/" target="_blank" rel="noopener" class="contact-option">
+            <div class="contact-option-icon" style="background: rgba(0,119,181,0.15); color: #0077b5;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-option-info">
+              <div class="contact-option-label">LinkedIn</div>
+              <div class="contact-option-value">tejas-full-stack-developer</div>
+            </div>
+            <svg class="contact-option-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://github.com/Rushi162003" target="_blank" rel="noopener" class="contact-option">
+            <div class="contact-option-icon" style="background: rgba(255,255,255,0.08); color: #e2e8f0;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="contact-option-info">
+              <div class="contact-option-label">GitHub</div>
+              <div class="contact-option-value">Rushi162003</div>
+            </div>
+            <svg class="contact-option-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="tejas_jagdale_resume_Frontend.pdf" download class="contact-option">
+            <div class="contact-option-icon" style="background: rgba(16,185,129,0.12); color: var(--green);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-option-info">
+              <div class="contact-option-label">Resume</div>
+              <div class="contact-option-value">Download PDF</div>
+            </div>
+            <svg class="contact-option-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xljgvayy" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Job opportunity, project, collaboration..." required />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit about what you have in mind..." required></textarea>
+          </div>
+          <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary btn-lg btn-full" id="cf-submit">
+            <span class="btn-label">Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-right"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">TJ<span class="dot">.</span></div>
+      <p class="footer-copy">Designed & Built by Tejas Jagdale · 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/Rushi162003" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/tejas-full-stack-developer/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rushijagdale1605@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
